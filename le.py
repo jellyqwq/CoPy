@@ -34,8 +34,9 @@ class ClassName:
         for i in range(len(grid)):
             for j in range(4):
                 if grid[i][j] == target[0]:
-                    self.dfs(target,grid,i,j)
-                    break
+                    # 需要return返回
+                    return self.dfs(target,grid,i,j)
+                    # break
      
 # grid=[["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]
 # target="SEE"
